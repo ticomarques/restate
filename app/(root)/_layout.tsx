@@ -6,7 +6,7 @@ import { Redirect, Slot } from "expo-router";
 export default function AppLayout(){
     const { loading, isLogged } = useGlobalContext();
 
-    //console.log(isLogged)
+    //console.log("Está logado ?", isLogged)
 
     if(loading){
         return (
