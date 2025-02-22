@@ -12,7 +12,10 @@ interface Props {
 
 export const FeaturedCard = ({item: {image, rating, name, address, price}, onPress}: Props) => {
   return (
-    <TouchableOpacity className="flex flex-col items-start w-60 h-80 relative">
+    <TouchableOpacity 
+        onPress={onPress}
+        className="flex flex-col items-start w-60 h-80 relative"
+    >
         <Image source={{ uri: image }} className="size-full rounded-2xl"/>
         <Image source={images.cardGradient} className="size-full rounded-2xl absolute bottom-0"/>
 
